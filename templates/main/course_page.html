@@ -1,0 +1,56 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %}
+    {{page.name}}
+{% endblock %}
+
+{% block body %}
+	{% load tags %}
+	<h1>{{page.name}}</h1>
+
+	{% if edit_general_info %}
+		<form enctype="multipart/form-data" method="post">
+		  {% csrf_token %}
+		  {{ edit_general_info.as_p }}
+		  <button name="edit_general_info" type="submit">Изменить</button>
+		</form>
+	{% else %}
+		<div>
+			{% if page.main_lecturer %}
+				{% if page.main_lecturer.profile.photo %}
+					<img class="portrait-img" src="{{page.main_lecturer.profile.photo.url}}" height=100></img>
+				{% endif %}
+				<a href="{% url 'profile' page.main_lecturer.id %}">{{page.main_lecturer}}</a><br>
+				Связь: <a href="{{page.main_lecturer.profile.link}}">{{page.main_lecturer.profile.link}}</a>
+			{% else %}
+				Лектор не указан
+			{% endif%}
+		</div>
+		<div class="general-info">{{page.general_info|generate_html|safe}}</div>
+		<a href="{% url 'pages_edit_general_info' slug=page.slug %}">Изменить</a>
+	{% endif%}
+	<div id="block-double-wrapper">
+		<div id="block-wrapper">
+			<div class="st-block">
+				<h3>Записи студентов</h3>
+				{{page.student_block.html| safe}}
+			</div>
+			<div class="lt-block">
+				<h3>Записи преподавателя</h3>
+				{{page.lecturer_block.html| safe}}
+			</div>
+		</div>
+	</div>
+
+	<div>
+	{% csrf_token %}
+	<form enctype="multipart/form-data" method="post">
+		  {% csrf_token %}
+		  <table>
+		  {{ edit_material_form.as_table }}
+		  </table>
+		  <button name="edit_material_submit" type="submit">Добавить</button>
+	</form>
+	</div>
+{% endblock %}

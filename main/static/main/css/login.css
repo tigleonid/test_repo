@@ -1,0 +1,204 @@
+
+html, body {
+	height: 100%;
+	overflow: hidden;
+	}
+
+html {
+	font-size: 62.5%;
+	}
+
+body {
+	color: #333;
+	font: 1.2em/1.55 "Helvetica Neue", Helvetica, Arial, sans-serif;
+	}
+
+/* Красивые ссылки*/
+
+:link, :visited {
+	color: #4a90e2;
+	border-bottom: 1px solid #4a90e2;
+	transition: all .35s ease;
+	text-decoration: none;
+	}
+
+
+:link:hover, :visited:hover {
+	color: #d2270b;
+	border-bottom-color: rgba(210,39,11,.3);
+}
+
+/* Расположение и основные параметры */
+
+.main-container {
+	text-align: left;
+	margin: auto;
+	display: block;
+}
+
+.centering {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 10;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: transparent;
+	overflow-y: auto;
+}
+
+.data-container {
+	max-width: 500px;
+	max-height: 90vh;
+	box-sizing: border-box;
+	font-size: 1.4rem;
+}
+
+@media (max-width: 767px) {
+	.data-container {
+		width: calc(100% - 40px);
+	}
+}
+
+.form-content {
+	padding: 30px;
+	line-height: 1.5;
+	color: rgba(0,0,0,.8);
+	background: #fff;
+}
+
+/* Тень вокруг окна */
+
+.login-box {
+	box-shadow: 0 2px 50px 0 rgba(0, 0, 0, 0.25);
+}
+
+/* Горизонтальное расположение окошек ввода */
+
+.form-row {
+	display: flex;
+	word-spacing: -.43em;
+	margin-left: -10px;
+	margin-right: -10px;
+}
+
+/* Окошки ввода */
+/* общее */
+
+.input-box {
+	float: none;
+	flex: 1 1 0;
+	word-spacing: normal;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+/* подпись над окошком */
+
+.input-box label {
+	display: block;
+	margin-bottom: 1rem;
+	color: #1658da;
+	font-size: 1.3rem;
+}
+
+/* само окошко */
+
+.input-box input {
+	width: 100%;
+	font-size: 1.8rem;
+	color: #000;
+	border-color: rgba(0, 0, 0, 0.25);
+	outline: none;
+	border-width: 0 0 1px;
+	padding-bottom: 1rem;
+}
+
+.input-box input:-webkit-autofill,
+.input-box input:-webkit-autofill:hover,
+.input-box input:-webkit-autofill:focus,
+.input-box input:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+.input-box input:focus {
+	border-color: #000;
+}
+
+/* выпадающее окошко */
+
+.input-box select {
+	width: 100%;
+	font-size: 1.8rem;
+	color: #000;
+	background: white;
+	border-color: rgba(0, 0, 0, 0.25);
+	outline: none;
+	border-width: 0 0 1px;
+	padding-bottom: 1rem;
+}
+
+.input-box select:focus {
+	border-color: #000;
+}
+
+
+/* Кнопка входа */
+
+.enter-button {
+	display: block;
+	text-decoration: none;
+	width: 100%;
+	min-height: 45px;
+	padding: 12px 10px;
+	font: 1.6rem/1.2 'FuturaPTWebDemi', "Helvetica Neue", Arial, sans-serif;
+	background: #1658da;
+	border: 1px solid #1658da;
+	color: #fff;
+	border-radius: 5px;
+	box-sizing: border-box;
+	outline: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	text-align: center;
+	margin-top: 30px;
+	cursor: pointer;
+	transition: all .35s ease;
+}
+
+.enter-button:hover {
+	background: #00349B;
+	border-color: #00349B;
+}
+
+/* Заголовок */
+
+.form-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 30px;
+	height: 60px;
+	background: #1658da;
+	color: #fff;
+	box-sizing: border-box;
+}
+
+.form-title {
+	margin: 0;
+	padding: 0;
+	line-height: 1.25;
+	font-weight: 600;
+	font: normal bold 1.6rem "Helvetica Neue", Helvetica, Arial, sans-serif;
+	box-sizing: border-box;
+}
+
+/* Штуки под окном */
+
+.form-footer {
+	padding: 30px;
+	color: #000;
+}

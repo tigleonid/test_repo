@@ -1,0 +1,48 @@
+{% extends 'main/base.html' %}
+{% block title %}
+	Профиль {{shown_user.username}}
+{% endblock %}
+
+{% block body %}
+	{% load tags %}
+	{% load widget_tweaks %}
+	<h1>{{shown_user|to_str}}</h1>
+
+	{% if shown_user.profile.photo%}
+		<img src="{{shown_user.profile.photo.url}}" height=300></img>
+	{% endif%}
+
+	{{shown_user.email}}
+
+	<br>
+
+	{% if edit %}
+		<form enctype="multipart/form-data" method="post">
+
+		  {% csrf_token %}
+		  {{ form.as_p }}
+		  <button type="submit">Изменить</button>
+
+		</form>
+	{% else %}
+		<ul>
+		{% for field in form %}
+			{% if field|field_type != "imagefield" %}
+				<li><b>{{ field.label }}</b>: {{ field.value|linebreaksbr }}</li>
+			{% endif %}
+            
+			
+    	{% endfor %}
+    	</ul>
+		{% if user.id == shown_user.id%}
+			<a href="{% url 'edit_profile' user.id %}">Редактировать профиль</a>
+		{% endif %}
+	{% endif%}
+
+	{% if error %}
+		Error: {{error}}
+	{% endif%}
+
+
+
+{% endblock %}

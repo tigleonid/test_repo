@@ -1,0 +1,242 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.5)  9 DEC 2023 23:46
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**3m.md
+(./3m.md
+LaTeX2e <2021-11-15> patch level 1
+L3 programming layer <2022-02-24>
+./3m.md:1: You can't use `macro parameter character #' in vertical mode.
+l.1 #
+     # Подробный план третьего модуля курса ...
+
+? 
+./3m.md:1: You can't use `macro parameter character #' in vertical mode.
+l.1 ##
+       Подробный план третьего модуля курса ...
+
+? 
+
+./3m.md:1: LaTeX Error: Unicode character П (U+041F)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ## П
+         одробный план третьего модуля курса ...
+
+? 
+
+./3m.md:1: LaTeX Error: Unicode character о (U+043E)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ## По
+           дробный план третьего модуля курса ...
+
+? 
+
+./3m.md:1: LaTeX Error: Unicode character д (U+0434)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ## Под
+             робный план третьего модуля курса ...
+
+? 
+
+./3m.md:1: LaTeX Error: Unicode character р (U+0440)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ## Подр
+               обный план третьего модуля курса ...
+
+? 
+
+./3m.md:1: LaTeX Error: Unicode character о (U+043E)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ## Подро
+                 бный план третьего модуля курса ...
+
+? 
+
+./3m.md:1: LaTeX Error: Unicode character б (U+0431)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ## Подроб
+                   ный план третьего модуля курса ...
+
+? 
+
+./3m.md:1: LaTeX Error: Unicode character н (U+043D)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ## Подробн
+                     ый план третьего модуля курса ...
+
+? 
+
+./3m.md:1: LaTeX Error: Unicode character ы (U+044B)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ## Подробны
+                       й план третьего модуля курса ...
+
+? 
+
+./3m.md:1: LaTeX Error: Unicode character й (U+0439)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ## Подробный
+                          план третьего модуля курса ...
+
+? 
+
+./3m.md:1: LaTeX Error: Unicode character п (U+043F)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ## Подробный п
+                            лан третьего модуля курса ...
+
+? 
+
+./3m.md:1: LaTeX Error: Unicode character л (U+043B)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ## Подробный пл
+                              ан третьего модуля курса ...
+
+? 
+
+./3m.md:1: LaTeX Error: Unicode character а (U+0430)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ## Подробный пла
+                                н третьего модуля курса ...
+
+? 
+
+./3m.md:1: LaTeX Error: Unicode character н (U+043D)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ## Подробный план
+                                   третьего модуля курса ...
+
+? 
+
+./3m.md:1: LaTeX Error: Unicode character т (U+0442)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ## Подробный план т
+                                     ретьего модуля курса ...
+
+? 
+
+./3m.md:1: LaTeX Error: Unicode character р (U+0440)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ## Подробный план тр
+                                       етьего модуля курса ...
+
+? 
+
+./3m.md:1: LaTeX Error: Unicode character е (U+0435)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ## Подробный план тре
+                                         тьего модуля курса ...
+
+? 
+
+./3m.md:1: LaTeX Error: Unicode character т (U+0442)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ## Подробный план трет
+                                           ьего модуля курса ...
+
+? 
+./3m.md:1: Emergency stop.
+ ...                                              
+                                                  
+l.1 ## Подробный план трет
+                                           ьего модуля курса ...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+ 
+Here is how much of TeX's memory you used:
+ 31 strings out of 478268
+ 612 string characters out of 5846348
+ 289381 words of memory out of 5000000
+ 18338 multiletter control sequences out of 15000+600000
+ 469259 words of font info for 28 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 13i,0n,12p,123b,14s stack positions out of 10000i,1000n,20000p,200000b,200000s
+./3m.md:1:  ==> Fatal error occurred, no output PDF file produced!

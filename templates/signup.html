@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="{% static 'main/css/login.css' %}">
+<head>
+    <meta charset="UTF-8">
+    <title>Регистрация</title>
+</head>
+<body>
+
+<div class="main-container">
+    <div class="centering">
+        <div class="data-container">
+            <div class="login-box">
+                <form method="post" name="loginform">
+                    {% csrf_token %}
+                    <div class="form-header">
+                        <h2 class="form-title">Регистрация</h2>
+                    </div>
+                    <div class="form-content">
+                        <div class="form-row">
+                            <label class="input-box">
+                                {{ form.as_p }}
+                            </label>
+                        </div>
+                        <input class="enter-button" type="submit" value="Зарегистрироваться">
+                    </div>
+                </form>
+            </div>
+            <div class="form-footer">
+                <p><a href="{% url 'login' %}" class="nav-link">Войти</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+
+</html>

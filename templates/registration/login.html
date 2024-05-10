@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="{% static 'main/css/login.css' %}">
+<head>
+    <meta charset="UTF-8">
+    <title>Вход</title>
+</head>
+<body>
+
+<div class="main-container">
+    <div class="centering">
+        <div class="data-container">
+            <div class="login-box">
+                <form method="post" name="loginform">
+                    {% csrf_token %}
+                    <div class="form-header">
+                        <h2 class="form-title">Вход на сайт физиков НИУ ВШЭ СПб</h2>
+                    </div>
+                    <div class="form-content">
+                        <div class="form-row">
+                            <label class="input-box">
+                                <label>Логин</label>
+                                <input type="text" value="" name="username"
+                                       autofocus="autofocus">
+                            </label>
+                            <label class="input-box">
+                                <label>Пароль</label>
+                                <input type="password" name="password">
+                            </label>
+                        </div>
+                        <input class="enter-button" type="submit" value="Войти">
+                    </div>
+                </form>
+            </div>
+            <div class="form-footer">
+                <p><a href="{% url 's_signup' %}" class="nav-link">Зарегистрироваться как <b>студент</b></a>
+                </p>
+                <p><a href="{% url 'l_signup' %}" class="nav-link">Зарегистрироваться как
+                    <b>преподаватель</b></a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+
+</html>

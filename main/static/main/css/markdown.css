@@ -1,0 +1,7 @@
+/* Здесь нужно будет разместить css для html, сгенерированного из markdown*/
+
+
+/* Уберем центрирование по умолчанию */
+.markdown p, .markdown h2, .markdown h3{
+    text-align: left;
+}

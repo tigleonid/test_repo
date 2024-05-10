@@ -1,0 +1,67 @@
+{% extends 'main/base.html' %}
+{% block title %}
+    Объявления
+{% endblock %}
+
+{% block body %}
+    {% if edit %}
+        <div class="main-form-container">
+            <div class="form-centering">
+                <div class="form-data-container">
+                    <div class="form-box">
+                        <form method="post" name="loginform">
+                            {% csrf_token %}
+                            <div class="form-header">
+                                <h2 class="form-title" style="text-align: center">Новое объявление</h2>
+                            </div>
+                            <div class="form-content">
+                                <div class="form-row">
+                                    <label class="form-input-box">
+                                        {{ form.as_p }}
+                                    </label>
+                                </div>
+                                <input class="form-enter-button btn btn-success" type="submit"
+                                       value="Отправить">
+                            </div>
+                            <span>{{ error }}</span>
+                        </form>
+                        <p style="text-align: center; padding-bottom: 5pt"><a href="{% url 'announce' %}">Просмотр
+                            объявлений</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    {% else %}
+
+        <h1>Объявления</h1>
+        <div class="info-boxes-wrapper">
+            {% for a in viewed_ann %}
+                <li class="info-box"> {{ a.sender }}: {{ a.html }}
+
+                    {% if a.sender.id != user.id %}
+                        <form action="{% url 'remove_announce' ann_id=a.id %}" method=POST>
+                            {% csrf_token %}
+                            <button id="close-btn" type="submit">
+                                Close!
+                            </button>
+                        </form>
+
+                    {% else %}
+                        <form action="{% url 'delete_announce' ann_id=a.id %}" method=POST>
+                            {% csrf_token %}
+                            <button id="close-btn" type="submit">
+                                Delete!
+                            </button>
+                        </form>
+                    {% endif %}
+                </li>
+            {% endfor %}
+        </div>
+        <p><a href="{% url 'write_announce' %}">Создать объявление</a></p>
+
+    {% endif %}
+
+
+{% endblock %}

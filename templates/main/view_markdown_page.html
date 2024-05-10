@@ -1,0 +1,14 @@
+{% extends 'main/base.html' %}
+{% block title %}
+    Объявления
+{% endblock %}
+
+{% block body %}
+
+    <div class="markdown">
+        {{page.html}}
+    </div>
+
+    <a href="{% url 'edit_markdown_page' page.id %}">Редактировать страницу</a>
+
+{% endblock %}

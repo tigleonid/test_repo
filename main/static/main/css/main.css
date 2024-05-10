@@ -1,0 +1,474 @@
+body {
+    background: #e3eef5;
+}
+
+
+body {
+    background: rgba(227, 238, 245, 0.18);
+}
+
+.main h1, .main  h2, .main  h3, .main  p {
+    text-align: center;
+}
+
+iframe {
+    display: block;
+}
+
+
+/* Красивые ссылки*/
+
+.main :link, .main :visited {
+	color: #4a90e2;
+	border-bottom: 1px solid #4a90e2;
+	transition: all .35s ease;
+	text-decoration: none;
+	}
+
+
+.main :link:hover, .main :visited:hover {
+	color: #d2270b;
+	border-bottom-color: rgba(210,39,11,.3);
+}
+
+
+
+/* Add a top margin to avoid content overlay */
+
+.main {
+    margin-top: 70px;
+}
+
+.fixed-top-bar  {
+    height: 45px;
+    -webkit-box-shadow: 5px 0 10px rgba(0, 0, 0, .1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    display: flex;
+}
+
+.logo-holder {
+    margin-right: 8px;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+
+.uni-name {
+    margin-left: 20px;
+    align-self: center;
+}
+
+.topmenu > li {
+  display: inline-block;
+  margin-right: 20px;
+  position: relative;
+}
+
+.navigation-bar {
+    margin-left: auto;
+    display: flex;
+}
+
+.navigation-bar li {
+    list-style: none;
+    cursor: pointer;
+}
+
+.navigation-bar > li {
+    display: inline-block;
+    align-self: center;
+    padding: 0.2rem 0.8rem 0 1.2rem;
+    position: relative;
+}
+
+.navigation-bar > li:last-child {
+  margin-right: 0;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 240%;
+    z-index: 10;
+    background: #0e55c4;
+    transition: 0.5s ease-in-out;
+}
+
+.dropdown-menu li {
+    border-bottom: 1px solid rgba(255,255,255,.3);
+    color: white;
+    padding-bottom: .2rem;
+    padding-top: .1rem;
+}
+
+.dropdown-menu a{
+    color: white;
+	text-decoration: none;
+}
+
+ul li:hover .dropdown-menu {
+    display: block;
+}
+
+.fixed-top-bar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.fixed-top-bar a {
+    text-decoration: none;
+    align-self: center;
+}
+
+/* Ссылки внизу страницы */
+
+.bottom-menu {
+    position: fixed;
+    z-index: 15;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.bottom-menu ul{
+    list-style: none;
+}
+
+.close-ann-button {
+    background-color: #0e55c4;
+    color: white;
+    border: 0;
+    margin-left: 8px;
+}
+
+.ann-notification {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.pages-boxes-wrapper {
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.page-box {
+    width: 100pt;
+    margin: auto;
+    border: 1px solid gray ;
+    text-align: center;
+    padding: 11pt;
+}
+
+.info-box {
+    width: 200pt;
+    margin: auto;
+    border: 2px solid gray ;
+    text-align: center;
+    padding: 15pt;
+}
+
+.info-boxes-wrapper {
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+}
+
+/*
+All forms classes
+ */
+
+.main {
+	color: #333;
+	font: 1.2em/1.55 "Helvetica Neue", Helvetica, Arial, sans-serif;
+	}
+
+/* Расположение и основные параметры */
+
+.main-form-container {
+	text-align: left;
+	margin: auto;
+	display: block;
+}
+
+.form-centering {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 10;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: transparent;
+	overflow-y: auto;
+}
+
+.form-data-container {
+	max-width: 500px;
+	max-height: 90vh;
+	box-sizing: border-box;
+	font-size: 1.4rem;
+}
+
+@media (max-width: 767px) {
+	.form-data-container {
+		width: calc(100% - 40px);
+	}
+}
+
+.form-content {
+	padding: 30px;
+	line-height: 1.5;
+	color: rgba(0,0,0,.8);
+	background: #fff;
+}
+
+/* Тень вокруг окна */
+
+.form-box {
+	box-shadow: 0 2px 50px 0 rgba(0, 0, 0, 0.25);
+}
+
+/* Горизонтальное расположение окошек ввода */
+
+.form-row {
+	display: flex;
+	word-spacing: -.43em;
+	margin-left: -10px;
+	margin-right: -10px;
+}
+
+/* Окошки ввода */
+/* общее */
+
+.form-input-box {
+	float: none;
+	flex: 1 1 0;
+	word-spacing: normal;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+/* подпись над окошком */
+
+.form-input-box label {
+	display: block;
+	margin-bottom: 1rem;
+	color: #1658da;
+	font-size: 1.3rem;
+}
+
+.form-input-box label :required {
+	color: red;
+}
+
+/* само окошко */
+/* обычный ввод */
+
+.form-input-box input {
+	width: 100%;
+	font-size: 1.8rem;
+	color: #000;
+	border-color: rgba(0, 0, 0, 0.25);
+	outline: none;
+	border-width: 0 0 1px;
+	padding-bottom: 1rem;
+	margin-bottom: 1rem;
+}
+
+.form-input-box input:-webkit-autofill,
+.form-input-box input:-webkit-autofill:hover,
+.form-input-box input:-webkit-autofill:focus,
+.form-input-box input:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+.form-input-box input:focus {
+	border-color: #000;
+}
+
+/* многострочный ввод */
+
+.form-input-box textarea {
+	width: 100%;
+	font-size: 1.8rem;
+	color: #000;
+	border-color: rgba(0, 0, 0, 0.25);
+	outline: none;
+	border-width: 0 0 1px;
+	padding-bottom: 1rem;
+	margin-bottom: 1rem;
+}
+
+.form-input-box textarea:-webkit-autofill,
+.form-input-box textarea:-webkit-autofill:hover,
+.form-input-box textarea:-webkit-autofill:focus,
+.form-input-box textarea:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+.form-input-box textarea:focus {
+	border-color: #000;
+}
+
+/* выпадающее окошко */
+
+.form-input-box select {
+	width: 100%;
+	font-size: 1.8rem;
+	color: #000;
+	background: white;
+	border-color: rgba(0, 0, 0, 0.25);
+	outline: none;
+	border-width: 0 0 1px;
+	padding-bottom: 1rem;
+}
+
+.form-input-box select:focus {
+	border-color: #000;
+}
+
+
+/* Кнопка входа */
+
+.form-enter-button {
+	display: block;
+	text-decoration: none;
+	width: 100%;
+	min-height: 45px;
+	padding: 12px 10px;
+	font: 1.6rem/1.2 'FuturaPTWebDemi', "Helvetica Neue", Arial, sans-serif;
+	background: #1658da;
+	border: 1px solid #1658da;
+	color: #fff;
+	border-radius: 5px;
+	box-sizing: border-box;
+	outline: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	text-align: center;
+	margin-top: 30px;
+	cursor: pointer;
+	transition: all .35s ease;
+}
+
+.form-enter-button:hover {
+	background: #00349B;
+	border-color: #00349B;
+}
+
+/* Заголовок */
+
+.form-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 30px;
+	height: 60px;
+	background: #1658da;
+	color: #fff;
+	box-sizing: border-box;
+}
+
+.form-title {
+	margin: 0;
+	padding: 0;
+	line-height: 1.25;
+	font-weight: 600;
+	font: normal bold 1.6rem "Helvetica Neue", Helvetica, Arial, sans-serif;
+	box-sizing: border-box;
+}
+
+/* Штуки под окном */
+
+.form-footer {
+	padding: 30px;
+	color: #000;
+}
+
+.main-form-container p {
+	text-align: left;
+	font-size: 75%;
+}
+
+
+
+#block-double-wrapper{
+    display:table;
+    table-layout: fixed;
+    width: 100%;
+}
+
+
+#block-wrapper{
+  display:table-row;
+}
+
+#block-wrapper>div{
+  display:table-cell
+}
+
+
+.st-block, .lt-block{
+    width: 50%;
+    padding: 2px;
+    padding-right: 3px;
+}
+
+.material-container{
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: hsl(270, 30%, 96%);
+    padding: 2px;
+    margin: 2px;
+}
+
+
+
+.portrait-img {
+    border-radius: 50px;
+    width: 100px;
+    height: 100px;
+    border: 5px solid hsl(220, 90%, 84%);
+    float: left;
+}
+
+.general-info{
+    clear: both;
+}
+
+.main .close-mat {
+    border-bottom: none;
+    transition: none;
+    text-decoration: none;
+    color: hsl(10, 80%, 40%);
+    width: 18px;
+    height: 18px;
+    font-weight: bolder;
+    float: right;
+    position: relative;
+    text-align: center;
+}

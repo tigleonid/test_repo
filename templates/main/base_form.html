@@ -1,0 +1,36 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block style %}
+    <link rel="stylesheet" href="{% static 'main/css/forms.css' %}">
+{% endblock %}
+
+{% block body %}
+
+    <div class="main-container">
+        <div class="centering">
+            <div class="data-container">
+                <div class="login-box">
+                    <form method="post" name="loginform">
+                        {% csrf_token %}
+                        <div class="form-header">
+                            <h2 class="form-title">{% block form_title %} {% endblock %}</h2>
+                        </div>
+                        <div class="form-content">
+                            <div class="form-row">
+                                <label class="input-box">
+                                    {% block form_insides %} {% endblock %}
+                                </label>
+                            </div>
+                            <input class="enter-button" type="submit" value="{% block button_name %} {% endblock %}">
+                        </div>
+                        {% block error %}
+                        {% endblock %}
+                    </form>
+                    {% block after %} {% endblock %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

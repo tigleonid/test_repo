@@ -1,0 +1,37 @@
+{% extends 'main/base.html' %}
+
+{% load tags %}
+{% block title %}
+{{ title }}
+{% endblock %}
+{% block body %}
+    <h1>Главная страница</h1>
+
+    <p>Разделы сайта:</p>
+
+    <h2>Курсы</h2>
+
+    {% for el in courses %}
+        <div class="alert alert-warning mt-2">
+             <a href="{{ el.absolute_url }}" class="course-link">{{ el.name }}</a>
+        </div>
+    {% endfor %}
+
+    <h2>Текстовые страницы</h2>
+
+    {% for el in markdown_pages %}
+        <div class="alert alert-warning mt-2">
+             <a href="{{ el.absolute_url }}" class="course-link">{{ el.name }}</a>
+        </div>
+    {% endfor %}
+
+
+<h2>Расписание</h2>
+<a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRD59ze5tGfZYMzTULP1fzqkb4P0rEtGuGC2f49aaG4uU6A1BIHL_hOdCyUGJtR20VMO82zklFd8zZo/pubhtml?gid=238010881#">Неделя</a>
+
+ {#  <iframe src="https://docs.google.com/spreadsheets/d/1breFqFnZUjGedxcWs_U1-LXymS3Fy3UWFnp__0d473g/htmlembed" style="height: 500px;width: 80%;allow=fullscreen"></iframe>#}
+ {#  <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRD59ze5tGfZYMzTULP1fzqkb4P0rEtGuGC2f49aaG4uU6A1BIHL_hOdCyUGJtR20VMO82zklFd8zZo/pubhtml?gid=238010881#" style="height: 500px;width: 80%;allow=fullscreen;border:none">></iframe>#}
+
+
+
+{% endblock %}

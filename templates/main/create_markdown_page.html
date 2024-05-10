@@ -1,0 +1,12 @@
+{% extends 'main/base_form.html' %}
+{% block title %}Добавить текстовую страницу{% endblock %}
+
+{% block form_title %}{% if edit %}Редактировать{% else %}Добавить{% endif %} текстовую страницу{% endblock %}
+
+{% block form_insides %}
+    {{ form.as_p }}
+{% endblock %}
+
+{% block button_name %}{% if edit %}Редактировать{% else %}Добавить{% endif %}{% endblock %}
+
+{% block after %} Здесь можно использовать <a href="https://ru.wikipedia.org/wiki/Markdown">Markdown</a> и MathJax (js рендеринг TeX'а). Математические блоки обозначаются $$…$$, строчные — $…$. {% endblock %}

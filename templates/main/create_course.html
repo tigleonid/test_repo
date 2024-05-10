@@ -1,0 +1,15 @@
+{% extends 'main/base_form.html' %}
+{% block title %}Новая страница курса{% endblock %}
+
+{% block form_title %}Добавить страницу курса{% endblock %}
+
+{% block form_insides %}
+    {{ form.name }}<br>
+    {{ form.general_info }}
+{% endblock %}
+
+{% block button_name %}Добавить{% endblock %}
+
+{% block error %}
+<span>{{ error }}</span>
+{% endblock %}
