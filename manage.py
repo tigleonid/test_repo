@@ -20,3 +20,13 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+
+# Function logs
+import logging
+
+# Configure logger
+logging.basicConfig(filename='function_logs.log', level=logging.INFO)
+
+# Write logs
+logging.info('Function logs')
