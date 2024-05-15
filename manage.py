@@ -20,3 +20,8 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+# Function logs
+import logging
+
+logging.basicConfig(filename='app.log', level=logging.DEBUG)
