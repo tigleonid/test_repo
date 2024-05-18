@@ -20,3 +20,7 @@ def main():
 
 if __name__ == '__main__':
     main()
+    
+# New function logs
+def new_function():
+    print('New function logs')
