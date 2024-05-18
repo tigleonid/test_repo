@@ -3,7 +3,6 @@
 import os
 import sys
 
-
 def main():
     """Run administrative tasks."""
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'tasks.settings')
@@ -20,3 +19,9 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+
+def logs():
+    """Add new function logs."""
+    # Add your logging code here
+    pass
