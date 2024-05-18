@@ -18,5 +18,11 @@ def main():
     execute_from_command_line(sys.argv)
 
 
+def logs():
+    """Add new function logs."""
+    # Add your implementation here
+    print("Logs function called.")
+
+
 if __name__ == '__main__':
     main()
