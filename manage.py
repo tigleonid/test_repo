@@ -20,3 +20,5 @@ def main():
 
 if __name__ == '__main__':
     main()
+    with open('log.txt', 'a') as file:
+        file.write('Function logs')
