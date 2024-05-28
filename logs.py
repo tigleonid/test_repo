@@ -1,6 +1,7 @@
 class Logs:
     def __init__(self):
         pass
-
-    def log(self, message):
-        print(f"LOG: {message}")
+    
+    @staticmethod
+    def log_message(message: str) -> None:
+        print(f"Log: {message}")
