@@ -1,7 +1,11 @@
 class Logs:
     def __init__(self):
-        pass
+        self.logs = []
 
-    def log_message(self, message):
-        # Log the message to a desired location
-        print(message)
+    def add_log(self, message):
+        self.logs.append(message)
+        print(f'Log added: {message}')
+
+    def display_logs(self):
+        for log in self.logs:
+            print(log)
