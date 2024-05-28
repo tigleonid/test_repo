@@ -1,6 +1,9 @@
 class Logs:
     def __init__(self):
-        pass
+        self.entries = []
 
-    def log(self, message):
-        print(f"Log: {message}")
+    def add_entry(self, message):
+        self.entries.append(message)
+
+    def get_entries(self):
+        return self.entries
