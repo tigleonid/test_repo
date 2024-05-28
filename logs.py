@@ -1,6 +1,4 @@
-class Logs:
+class logs:
     def __init__(self):
+        # Initialize log configuration
         pass
-
-    def log_message(self, message):
-        print(f'Log: {message}')
