@@ -1,11 +1,9 @@
-class Logs:
+class logs:
     def __init__(self):
-        self.logs = []
+        # Initialize any necessary variables or settings for logging
+        pass
 
-    def add_log(self, message):
-        self.logs.append(message)
-        print(f'Log added: {message}')
-
-    def display_logs(self):
-        for log in self.logs:
-            print(log)
+    def log(self, message):
+        # This method will handle the logging of messages.
+        # Implementation will depend on specific logging mechanism chosen (e.g., writing to a file, console, etc.)
+        print(message)  # Example implementation
