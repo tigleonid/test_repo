@@ -1,4 +1,7 @@
 class Logs:
-    @staticmethod
-    def log_message(message):
-        print("Log:", message)
+    def __init__(self):
+        pass
+    
+    def log_message(self, message):
+        # Example method that could be used for logging
+        print(message)
