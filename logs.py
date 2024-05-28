@@ -1,9 +1,8 @@
 class Logs:
     def __init__(self):
-        self.entries = []
+        # Here you can initialize any attributes or setup needed for logging
+        pass
 
-    def add_entry(self, message):
-        self.entries.append(message)
-
-    def get_entries(self):
-        return self.entries
+    def log(self, message):
+        # Implement the logging mechanism, e.g., writing to a file or printing
+        print(message)
