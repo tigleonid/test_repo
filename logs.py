@@ -1,10 +1,9 @@
 class Logs:
     def __init__(self):
-        pass
+        self.entries = []
 
-    def log_message(self, message):
-        print(f'Log: {message}')
+    def add_entry(self, message):
+        self.entries.append(message)
 
-# Example usage:
-# logger = Logs()
-# logger.log_message('This is a test log message.')
+    def get_all_entries(self):
+        return self.entries
