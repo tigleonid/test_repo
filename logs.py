@@ -3,5 +3,5 @@ class Logs:
         pass
 
     def log_message(self, message):
-        # Implements logging logic here
-        print(f'Log: {message}')
+        # Log the message to a desired location
+        print(message)
