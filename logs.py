@@ -1,7 +1,8 @@
 class Logs:
     def __init__(self):
+        # This constructor sets up the logging structure.
         pass
-    
-    @staticmethod
-    def log_message(message: str) -> None:
-        print(f"Log: {message}")
+
+    def log(self, message):
+        # This method logs a message.
+        print(message)
