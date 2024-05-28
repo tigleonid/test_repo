@@ -1,9 +1,8 @@
 class Logs:
     def __init__(self):
+        # Initialize log handler
         pass
 
-    def log_info(self, msg):
-        print(f'INFO: {msg}')
-
-    def log_error(self, msg):
-        print(f'ERROR: {msg}')
+    def add_entry(self, message):
+        # Add a log entry
+        print(f"Log entry: {message}")
